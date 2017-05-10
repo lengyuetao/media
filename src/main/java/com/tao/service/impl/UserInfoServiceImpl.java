@@ -3,6 +3,7 @@ package com.tao.service.impl;
 import com.tao.entity.UserInfo;
 import com.tao.mapper.UserInfoDao;
 import com.tao.service.UserInfoService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -20,7 +21,9 @@ public class UserInfoServiceImpl implements UserInfoService{
         return dao.findAllUserInfo();
     }
 
+    @Cacheable(value="test",key = "'test_'+#id")
     public UserInfo findUserInfoById(int id) {
+        System.out.println("****");
         return dao.findUserInfoById(id);
     }
 

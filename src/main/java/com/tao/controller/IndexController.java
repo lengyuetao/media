@@ -4,6 +4,7 @@ import com.tao.entity.UserInfo;
 import com.tao.service.UserInfoService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,10 +23,12 @@ public class IndexController {
     @RequestMapping("/index")
     public String index(HttpServletRequest request,String userName){
         log.error("进入首页");
-//        List<UserInfo> list=userInfoService.findAllUserInfo();
-//        for(UserInfo userInfo:list){
-//          System.out.println("用户信息："+userInfo.toString());
-//        }
+        List<UserInfo> list=userInfoService.findAllUserInfo();
+        for(UserInfo userInfo:list){
+          System.out.println("用户信息："+userInfo.toString());
+        }
+
+        System.out.println("--------------------------------------------");
 
         if(null==userName){
             userName="123";
@@ -39,7 +42,9 @@ public class IndexController {
 
         System.out.println("user用户名："+request.getSession().getAttribute("user"));
 
+        UserInfo userInfo=userInfoService.findUserInfoById(1);
 
+        System.out.println("用户信息："+userInfo.toString());
         return "index";
     }
 }
