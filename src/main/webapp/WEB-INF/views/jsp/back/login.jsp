@@ -31,35 +31,36 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal" action="${contextPath}/back/main" method="post">
+    <form class="form form-horizontal" action="${contextPath}/back/main" method="post" onsubmit="return toValidate()">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+          <input id="userName" name="userName" type="text" placeholder="账户" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+          <input id="password" name="password" type="password" placeholder="密码" class="input-text size-L">
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-          <img src="images/VerifyCode.aspx.png"> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
-      </div>
-      <div class="row cl">
-        <div class="formControls col-xs-8 col-xs-offset-3">
-          <label for="online">
-            <input type="checkbox" name="online" id="online" value="">
-            使我保持登录状态</label>
+          <input id="code" class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
+          <img id="imgUrl" src="${contextPath}/validate/code" /><a id="kanbuq">看不清，换一张</a>
         </div>
       </div>
+      <%--<div class="row cl">--%>
+        <%--<div class="formControls col-xs-8 col-xs-offset-3">--%>
+          <%--<label for="online">--%>
+            <%--<input type="checkbox" name="online" id="online" value="">--%>
+            <%--使我保持登录状态</label>--%>
+        <%--</div>--%>
+      <%--</div>--%>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
-          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+          <input id="btnSubmit" name="btnSubmit" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input id="btnClear" name="btnClear" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
         </div>
       </div>
     </form>
@@ -68,6 +69,47 @@
 <div class="footer">Copyright 你的公司名称 by H-ui.admin.v2.3</div>
 <script type="text/javascript" src="${contextPath}/resources/h-ui/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="${contextPath}/resources/h-ui/static/h-ui/js/H-ui.js"></script>
+
+<script>
+
+  $("#kanbuq").click(function(){
+    var url = "${contextPath}/validate/code?t=" + Math.random();
+    $("#imgUrl").attr("src",url);
+  });
+
+  function toValidate(){
+    var userName=$("#username").val();
+    var password=$("#password").val();
+    var code=$("#code").val();
+    if(userName==''){
+      alert("账号不能为空！");
+      return false;
+    }
+    if(password==''){
+      alert("密码不能为空！");
+      return false;
+    }
+    var json=[];
+    $.ajax({
+      type:"POST",
+      url:'${contextPath}/validate/examine',
+      dataType:"json",
+      async:false,
+      data:{"code":code},
+      success:function (data) {
+        json=data;
+      }
+    });
+    if(json.code!=1) {
+      alert("验证码错误！");
+      return false;
+    }
+    return true;
+
+  };
+
+</script>
+
 <script>
 var _hmt = _hmt || [];
 (function() {

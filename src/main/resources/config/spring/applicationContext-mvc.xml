@@ -82,4 +82,14 @@
         </property>
     </bean>
 
+
+    <mvc:interceptors>
+        <!--设置token拦截器 -->
+        <mvc:interceptor>
+            <mvc:mapping path="/back/**" />
+            <bean class="com.tao.interceptor.SessionInterceptor" />
+        </mvc:interceptor>
+
+    </mvc:interceptors>
+
 </beans>

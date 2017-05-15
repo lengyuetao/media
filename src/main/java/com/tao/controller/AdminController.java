@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 /**
  * Created by zhangantao on 2017/4/20.
@@ -13,15 +15,23 @@ public class AdminController {
     Logger log=Logger.getLogger(AdminController.class);
 
     @RequestMapping("/back/index")
-    public String index(Model model){
-        log.error("登录页面***");
-        model.addAttribute("userName","里斯本");
+    public String index(){
         return "/back/login";
     }
+
     @RequestMapping("/back/main")
-    public String toMain(){
-        log.error("管理页面***");
-        return "/back/main";
+    public String toMain(Model model,
+                         @RequestParam(value ="userName",required = true)String userName,
+                         @RequestParam(value="password",required = true)String password){
+
+        if(userName.equals("zat123")&&password.equals("123")){
+            model.addAttribute("userName",userName);
+            return "/back/main";
+        }else{
+            log.error("用户名和密码错误！");
+            return "redirect:/back/index";
+        }
+
     }
 
     @RequestMapping("/back/welcome")
