@@ -19,16 +19,33 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
         response.setCharacterEncoding("UTF-8");
         response.setContentType("text/html;charset=UTF-8");
         String uri = request.getRequestURI();
+
         String[] noInterceptURIs = new String[] { "/back/login", "/back/logout",
-                "/back/index", "/back/error", "/back/static", "/back/interfaces" };
-        boolean beIntercepted = true;// 判断是否需要拦截
+                "/back/index","/back/error", "/back/static", "/back/interfaces" };
+
+        boolean flage = true;// 判断是否需要拦截
+
         for (String noInterceptURI : noInterceptURIs) {
             if (uri.indexOf(noInterceptURI) != -1) {
-                beIntercepted = false;
+                flage = false;
                 break;
             }
         }
-        return super.preHandle(request, response, handler);
 
+        if(flage){
+            System.out.println("请求的路径："+uri);
+            System.out.println("*******账号："+request.getSession().getAttribute("userName"));
+            if(null==request.getSession().getAttribute("userName")){
+                response.sendRedirect(request.getContextPath()+"/back/index");
+                return false;
+            }else {
+               if(!"zat123".equals(request.getSession().getAttribute("userName"))){
+                   response.sendRedirect(request.getContextPath()+"/back/index");
+                   return false;
+               }
+            }
+        }
+
+        return super.preHandle(request, response, handler);
     }
 }
