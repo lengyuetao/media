@@ -75,6 +75,9 @@
     <!--访问静态资源-->
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
 
+    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
+
     <!--FileUpload config-->
     <bean id="mutipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize">
