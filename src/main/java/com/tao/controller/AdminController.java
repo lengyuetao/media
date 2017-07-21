@@ -24,7 +24,7 @@ public class AdminController {
                          @RequestParam(value ="userName",required = true)String userName,
                          @RequestParam(value="password",required = true)String password){
 
-        if(userName.equals("zat123")&&password.equals("123")){
+        if(userName.equals("admin")&&password.equals("123")){
             model.addAttribute("userName",userName);
             return "/back/main";
         }else{

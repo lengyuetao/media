@@ -7,7 +7,6 @@ import java.util.Date;
  * Created by zhangantao on 2017/4/13.
  */
 public class UserInfo implements Serializable {
-
     private  Long id;
     private  String userName;
     private  String pwd;

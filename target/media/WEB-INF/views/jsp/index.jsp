@@ -7,6 +7,6 @@
     <title>首页</title>
 </head>
 <body>
-<h2>媒体采集!</h2>
+媒体采集!
 </body>
 </html>
