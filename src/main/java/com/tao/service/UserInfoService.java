@@ -13,7 +13,7 @@ public interface UserInfoService {
 
      public List<UserInfo> findAllUserInfo();
 
-     public UserInfo findUserInfoById(int id);
+     public UserInfo findUserInfoById(long id);
 
      public void  insertUserInfo(UserInfo userInfo);
 }

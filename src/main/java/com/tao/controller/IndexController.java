@@ -26,8 +26,10 @@ public class IndexController {
         System.out.println("userName用户名："+request.getSession().getAttribute("userName"));
 
         UserInfo userInfo=userInfoService.findUserInfoById(1);
-        if(null!=userInfo){
-            System.out.println("用户信息："+userInfo.toString());
+        List<UserInfo> list=userInfoService.findAllUserInfo();
+        if(null!=list&&list.size()>0){
+            System.out.println("用户信息："+list.size());
+            System.out.println("用户名："+userInfo.getUserName());
         }
 
         return "index";

@@ -22,7 +22,7 @@ public class UserInfoServiceImpl implements UserInfoService{
     }
 
     @Cacheable(value="test",key = "'test_'+#id")
-    public UserInfo findUserInfoById(int id) {
+    public UserInfo findUserInfoById(long id) {
         System.out.println("****");
         return dao.findUserInfoById(id);
     }

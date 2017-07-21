@@ -14,7 +14,7 @@ public interface UserInfoDao {
 
     List<UserInfo> findAllUserInfo();
 
-    UserInfo findUserInfoById(int id);
+    UserInfo findUserInfoById(long id);
 
     void insertUserInfo(UserInfo userInfo);
 }
