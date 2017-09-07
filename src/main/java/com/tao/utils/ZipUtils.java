@@ -1,6 +1,5 @@
 package com.tao.utils;
 
-import sun.security.provider.MD5;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -154,19 +153,19 @@ public class ZipUtils {
         catch(IOException ex)
         {
 
-            System.out.println(MD5.class.getName()+": "+ex.getMessage());
+            System.out.println("加密类型: "+ex.getMessage());
 
         }
         catch (NoSuchAlgorithmException e)
         {
 
-            System.out.println(MD5.class.getName()+": "+e.getMessage());
+            System.out.println("加密类型: "+e.getMessage());
 
         }
         finally
         {
 
-            try{ if(fis!=null) fis.close();} catch(IOException e){System.out.println(MD5.class.getName()+":"+e.getMessage());}
+            try{ if(fis!=null) fis.close();} catch(IOException e){System.out.println("加密类型:"+e.getMessage());}
 
         }
 
