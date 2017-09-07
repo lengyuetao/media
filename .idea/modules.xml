@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../dbutils/dbutils.iml" filepath="$PROJECT_DIR$/../dbutils/dbutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo0/demo0.iml" filepath="$PROJECT_DIR$/../demo0/demo0.iml" />
       <module fileurl="file://$PROJECT_DIR$/media.iml" filepath="$PROJECT_DIR$/media.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../springboot_demo/springboot_demo.iml" filepath="$PROJECT_DIR$/../springboot_demo/springboot_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../test/test.iml" filepath="$PROJECT_DIR$/../test/test.iml" />
+      <module fileurl="file://E:\idea\springboot_demo\springboot_demo.iml" filepath="E:\idea\springboot_demo\springboot_demo.iml" />
+      <module fileurl="file://E:\idea\demo0\zat_demo0.iml" filepath="E:\idea\demo0\zat_demo0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zat_kafka/zat_kafka.iml" filepath="$PROJECT_DIR$/../zat_kafka/zat_kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/../zat_springboot/zat_springboot.iml" filepath="$PROJECT_DIR$/../zat_springboot/zat_springboot.iml" />
     </modules>
   </component>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../dbutils" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/../test" />
   </component>
@@ -9,9 +10,12 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../demo/pom.xml" />
-        <option value="$PROJECT_DIR$/../test/pom.xml" />
         <option value="$PROJECT_DIR$/../zat_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../dbutils/pom.xml" />
+        <option value="$PROJECT_DIR$/../zat_kafka/pom.xml" />
+        <option value="$PROJECT_DIR$/../zat_demo0/pom.xml" />
+        <option value="$PROJECT_DIR$/../demo0/pom.xml" />
       </list>
     </option>
   </component>

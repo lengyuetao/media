@@ -6,17 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dbutils" />
+        <module name="demo0" />
         <module name="media" />
         <module name="springboot_demo" />
-        <module name="test" />
+        <module name="zat_demo0" />
+        <module name="zat_kafka" />
         <module name="zat_springboot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dbutils" target="1.8" />
       <module name="demo" target="1.8" />
+      <module name="demo0" target="1.8" />
       <module name="media" target="1.5" />
       <module name="springboot_demo" target="1.8" />
       <module name="test" target="1.8" />
+      <module name="zat_demo0" target="1.8" />
+      <module name="zat_kafka" target="1.8" />
       <module name="zat_springboot" target="1.8" />
     </bytecodeTargetLevel>
   </component>

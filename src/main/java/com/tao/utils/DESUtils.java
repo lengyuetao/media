@@ -8,7 +8,7 @@ import javax.crypto.spec.IvParameterSpec;
 
 public class DESUtils {
 
-    //��������
+
     public static String decrypt(String message,String key) throws Exception {
 
         byte[] bytesrc =convertHexString(message);

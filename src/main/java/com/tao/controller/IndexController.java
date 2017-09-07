@@ -23,14 +23,8 @@ public class IndexController {
     @RequestMapping("/index")
     public String index(HttpServletRequest request){
 
-        System.out.println("userName用户名："+request.getSession().getAttribute("userName"));
-
         UserInfo userInfo=userInfoService.findUserInfoById(1);
         List<UserInfo> list=userInfoService.findAllUserInfo();
-        if(null!=list&&list.size()>0){
-            System.out.println("用户信息："+list.size());
-            System.out.println("用户名："+userInfo.getUserName());
-        }
 
         return "index";
     }

@@ -20,18 +20,8 @@ public class AdminController {
     }
 
     @RequestMapping("/back/main")
-    public String toMain(Model model,
-                         @RequestParam(value ="userName",required = true)String userName,
-                         @RequestParam(value="password",required = true)String password){
-
-        if(userName.equals("admin")&&password.equals("123")){
-            model.addAttribute("userName",userName);
-            return "/back/main";
-        }else{
-            log.error("用户名和密码错误！");
-            return "redirect:/back/index";
-        }
-
+    public String toMain(){
+        return "/back/main";
     }
 
     @RequestMapping("/back/welcome")
