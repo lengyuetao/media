@@ -133,7 +133,7 @@
 					<%-- <li><a _href="${contextPath}/back/system/system-category.jsp" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li> --%>
 					<%--<li><a _href="${contextPath}/back/system/system-data.jsp" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>--%>
 					<%--<li><a _href="${contextPath}/back/system/system-shielding.jsp" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>--%>
-					<li><a _href="${contextPath}/back/system/system-log.jsp" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
+					<li><a _href="${contextPath}/log/index" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
 				</ul>
 			</dd>
 		</dl>

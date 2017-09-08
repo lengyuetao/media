@@ -1,10 +1,14 @@
 package com.tao.interceptor;
 
+import com.tao.entity.system.SystemLog;
+import com.tao.service.SystemLogService;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Date;
 import java.util.Enumeration;
 
 /**
@@ -12,6 +16,9 @@ import java.util.Enumeration;
  */
 public class SessionInterceptor extends HandlerInterceptorAdapter{
     Logger log=Logger.getLogger(SessionInterceptor.class);
+
+    @Autowired
+    private SystemLogService systemLogService;
 
     private static final String[] INTETERCEPT_URI= new String[] {
             "/back/login",
@@ -24,9 +31,13 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
 
-        request.setCharacterEncoding("UTF-8");
+//        response.setContentType("text/html;charset=UTF-8");
+
         response.setCharacterEncoding("UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
+        response.setHeader("Access-Control-Allow-origin", "*");
+        response.setHeader("Access-Control-Allow-Credentials", "true");
+        response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        response.setHeader("Access-Control-Allow-Headers", "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With");
         String uri = request.getRequestURI();
 
         boolean flage = true;// 判断是否需要拦截
@@ -57,7 +68,13 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
                 response.sendRedirect(request.getContextPath()+"/back/index");
                 return false;
             }else {
-               return true;
+                SystemLog systemLog=new SystemLog();
+                systemLog.setAuthor(request.getSession().getAttribute("userName").toString());
+                systemLog.setLogName("后台登录");
+                systemLog.setContent("请求路径："+uri+"参数："+params);
+                systemLog.setAddTime(new Date());
+                systemLogService.insert(systemLog);
+                return true;
             }
         }
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tao.mapper.SystemLogDao">
+
+    <!--添加日志-->
+    <insert id="insert"  parameterType="com.tao.entity.system.SystemLog">
+        INSERT  INTO
+          systemlog(logName,content,author,addTime)
+        VALUES
+          (#{logName},#{content},#{author},#{addTime})
+    </insert>
+
+    <!--修改日志-->
+    <update id="update" parameterType="com.tao.entity.system.SystemLog">
+        UPDATE
+          systemlog
+        SET
+           <set>
+               <if test="logName !=null and logName !=''">
+                  logName=#{logName},
+               </if>
+               <if test="content !=null and content !=''">
+                   content=#{content},
+               </if>
+               <if test="author !=null and author !=''">
+                   author=#{author},
+               </if>
+           </set>
+        WHERE
+          id=#{id}
+    </update>
+
+    <!--删除日志-->
+    <update id="delete" parameterType="java.lang.Long">
+        UPDATE systemlog SET isDel=1 WHERE id=#{id}
+    </update>
+
+    <select id="findSystemTotalCount" resultType="int">
+        SELECT COUNT(id) counts FROM systemlog;
+    </select>
+
+    <!--查询日志详情-->
+    <select id="getSystemLogById" parameterType="java.lang.Long" resultType="com.tao.entity.system.SystemLog">
+        SELECT * from systemlog where id=#{id}
+    </select>
+
+    <!--日志列表-->
+    <select id="getSystemLogList"   resultType="com.tao.entity.system.SystemLog">
+        SELECT
+          id,logName,content,author,isDel,addTime
+        from
+          systemlog
+        WHERE
+          isDel=0
+        <if test="startTm != null and startTm != ''">
+            and addTime  >= #{startTm}
+        </if>
+        <if test="endTm != null and endTm !=''">
+            and addTime  <![CDATA[<=]]> #{endTm}
+        </if>
+        ORDER BY addTime DESC
+        LIMIT #{pageIndex},#{pageSize}
+    </select>
+
+
+</mapper>
