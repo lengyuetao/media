@@ -30,31 +30,34 @@ public class SystemLogController {
     }
 
     /**
-     *
+     * 系统日志列表
      * @param startTm
      * @param endTm
-     * @param sEcho 当前页
-     * @param iDisplayStart 起始条数
-     * @param iDisplayLength 每页显示的条数
+     * @param draw
+     * @param start
+     * @param length
      * @return
      */
     @RequestMapping(value = "/log/list",produces = "application/json; charset=utf-8")
     @ResponseBody
     public String list(@RequestParam(value="startTm",required = false)String startTm,
                        @RequestParam(value="endTm",required = false)String endTm,
-                       @RequestParam(value="sEcho",required = false)Integer sEcho,
-                       @RequestParam(value="iDisplayStart",required = false)Integer iDisplayStart,
-                       @RequestParam(value="iDisplayLength",required = false)Integer iDisplayLength){
+                       @RequestParam(value="draw",required = false)Integer draw,
+                       @RequestParam(value="start",required = false)Integer start,
+                       @RequestParam(value="length",required = false)Integer length
+                        ){
 
         int totalCount=systemLogService.findSystemTotalCount();
-        List<SystemLog> list=systemLogService.getSystemLogList(startTm,endTm,(sEcho-1)*iDisplayStart,iDisplayLength);
+
+        List<SystemLog> list=systemLogService.getSystemLogList(startTm,endTm,start,length);
 
         JSONObject json=new JSONObject();
 
-        json.put("sEcho",sEcho+1);
-        json.put("iTotalRecords",totalCount);
-        json.put("iTotalDisplayRecords",list.size());
-        json.put("aData",list);
+        json.put("draw",draw);
+        json.put("recordsTotal",totalCount);
+        json.put("recordsFiltered",totalCount);
+        json.put("data",list);
+
         return json.toString();
     }
 }
