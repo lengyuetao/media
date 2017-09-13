@@ -37,7 +37,20 @@
     </update>
 
     <select id="findSystemTotalCount" resultType="int">
-        SELECT COUNT(id) counts FROM systemlog;
+        SELECT
+          COUNT(id) counts
+        FROM
+          systemlog
+        WHERE isDel=0
+        <if test="logName !=null and logName !='' ">
+            AND logName like concat(#{logName},'%')
+        </if>
+        <if test="startTm != null and startTm != ''">
+            and addTime  >= #{startTm}
+        </if>
+        <if test="endTm != null and endTm !=''">
+            and addTime  <![CDATA[<=]]> #{endTm}
+        </if>
     </select>
 
     <!--查询日志详情-->
@@ -53,6 +66,9 @@
           systemlog
         WHERE
           isDel=0
+        <if test="logName !=null and logName !='' ">
+            AND logName like concat(#{logName},'%')
+        </if>
         <if test="startTm != null and startTm != ''">
             and addTime  >= #{startTm}
         </if>

@@ -16,7 +16,7 @@ public interface SystemLogService {
 
     SystemLog getSystemLogById(Long id);
 
-    int findSystemTotalCount();
+    int findSystemTotalCount(String startTm,String endTm,String logName);
 
-    List<SystemLog> getSystemLogList(String startTm,String endTm,Integer pageIndex,Integer pageSize);
+    List<SystemLog> getSystemLogList(String startTm,String endTm,Integer pageIndex,Integer pageSize,String logName);
 }

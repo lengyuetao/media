@@ -44,12 +44,13 @@ public class SystemLogController {
                        @RequestParam(value="endTm",required = false)String endTm,
                        @RequestParam(value="draw",required = false)Integer draw,
                        @RequestParam(value="start",required = false)Integer start,
-                       @RequestParam(value="length",required = false)Integer length
+                       @RequestParam(value="length",required = false)Integer length,
+                       @RequestParam(value="logName",required = false)String logName
                         ){
 
-        int totalCount=systemLogService.findSystemTotalCount();
+        int totalCount=systemLogService.findSystemTotalCount(startTm,endTm,logName);
 
-        List<SystemLog> list=systemLogService.getSystemLogList(startTm,endTm,start,length);
+        List<SystemLog> list=systemLogService.getSystemLogList(startTm,endTm,start,length,logName);
 
         JSONObject json=new JSONObject();
 
