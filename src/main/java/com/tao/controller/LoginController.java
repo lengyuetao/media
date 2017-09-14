@@ -29,4 +29,10 @@ public class LoginController {
             return "redirect:/back/index";
         }
     }
+
+    @RequestMapping("/back/loginOut")
+    public String loginOut(HttpServletRequest request){
+        request.getSession().removeAttribute("userName");
+        return "/back/login";
+    }
 }

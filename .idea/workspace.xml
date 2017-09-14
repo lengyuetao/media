@@ -8,12 +8,10 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../zat_springboot/src/main/java/com/tao/demo/utils/JsonUtils.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../zat_springboot/src/test/java/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/mapper/SystemLogDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/mapper/SystemLogDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/service/SystemLogService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/service/SystemLogService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/service/impl/SystemLogServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/service/impl/SystemLogServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/SystemLogMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SystemLogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/system/system-log.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/system/system-log.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/media/WEB-INF/views/jsp/back/main.jsp" afterPath="$PROJECT_DIR$/target/media/WEB-INF/views/jsp/back/main.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/media/WEB-INF/views/jsp/back/system/system-log.jsp" afterPath="$PROJECT_DIR$/target/media/WEB-INF/views/jsp/back/system/system-log.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../zat_kafka/src/main/java/com/tao/example/kafka/consumer/MsgConsumer.java" afterPath="$PROJECT_DIR$/../zat_kafka/src/main/java/com/tao/example/kafka/consumer/MsgConsumer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../zat_kafka/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../zat_kafka/src/main/resources/application.properties" />
@@ -89,44 +87,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="system-log.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/system/system-log.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="93" column="2" lean-forward="true" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WdatePicker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/h-ui/lib/My97DatePicker/WdatePicker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SystemLogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="40" column="85" lean-forward="true" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,7 +121,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../zat_springboot/src/main/java/com/tao/demo/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/../zat_springboot/src/main/java/com/tao/demo/mapper/UserInfoMapper.java" />
         <option value="$PROJECT_DIR$/../zat_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/tao/mapper/UserInfoDao.java" />
@@ -193,13 +153,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tao/utils/ZipUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tao/utils/DESUtils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tao/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tao/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tao/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tao/entity/system/SystemLog.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/common/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/b25d225e-50d4-40ae-85a6-fa013d7ba3b9/console.sql" />
@@ -211,6 +168,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SystemLogMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/system/system-log.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tao/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/test/Test.java" />
       </list>
     </option>
   </component>
@@ -277,6 +238,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,6 +265,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -348,40 +315,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,10 +349,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="jsp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="back" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,10 +387,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="back" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,108 +430,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1377,7 +1206,8 @@
       <workItem from="1503567679764" duration="25660000" />
       <workItem from="1503974118728" duration="61037000" />
       <workItem from="1504746347794" duration="82307000" />
-      <workItem from="1505274056597" duration="5587000" />
+      <workItem from="1505274056597" duration="8705000" />
+      <workItem from="1505351471064" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="springboot+redis demo项目">
       <created>1500598834694</created>
@@ -1442,7 +1272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505122618296</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="添加查询条件">
+      <created>1505284569793</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1505284569793</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1478,7 +1315,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266617000" />
+    <option name="totallyTimeSpent" value="271780000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1516,7 +1353,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5220838" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.49785408" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1668455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19849785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1589,6 +1426,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="springboot+redis demo项目" />
     <MESSAGE value="test" />
     <MESSAGE value="添加依赖包，mybatis,redis配置" />
@@ -1598,7 +1436,8 @@
     <MESSAGE value="修改登录功能模块" />
     <MESSAGE value="添加分页功能" />
     <MESSAGE value="修复翻页失效问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复翻页失效问题" />
+    <MESSAGE value="添加查询条件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加查询条件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1611,51 +1450,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/resources/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/common/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/entity/system/SystemLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/mapper/UserInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1702,12 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="85" column="72" lean-forward="true" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
-          <folding>
-            <marker date="1503567666547" expanded="true" signature="4349:4369" ph="..." />
-            <marker date="1503567666547" expanded="true" signature="4458:4466" ph="&amp;##xe6e1;" />
-            <marker date="1503567666547" expanded="true" signature="4793:4813" ph="..." />
-            <marker date="1503567666547" expanded="true" signature="4901:4909" ph="&amp;##xe631;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1827,12 +1615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1271">
           <caret line="69" column="21" lean-forward="true" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding>
-            <marker date="1503567666532" expanded="true" signature="5693:5713" ph="..." />
-            <marker date="1503567666532" expanded="true" signature="5803:5811" ph="&amp;##xe603;" />
-            <marker date="1503567666532" expanded="true" signature="6139:6159" ph="..." />
-            <marker date="1503567666532" expanded="true" signature="6248:6256" ph="&amp;##xe6de;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1893,24 +1675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="101" column="21" lean-forward="true" selection-start-line="101" selection-start-column="21" selection-end-line="101" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../dbutils/src/main/webapp/back/admin/admin-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1344">
           <caret line="64" column="72" lean-forward="true" selection-start-line="64" selection-start-column="72" selection-end-line="64" selection-end-column="72" />
-          <folding>
-            <marker date="1484055566000" expanded="true" signature="4748:4768" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="4794:4802" ph="&amp;##xe615;" />
-            <marker date="1484055566000" expanded="true" signature="5223:5243" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="5269:5277" ph="&amp;##xe631;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1918,7 +1686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="41" column="30" lean-forward="false" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1926,11 +1693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="15159" column="4" lean-forward="false" selection-start-line="15159" selection-start-column="4" selection-end-line="15159" selection-end-column="4" />
-          <folding>
-            <marker date="1492478982000" expanded="true" signature="157864:157889" ph="..." />
-            <marker date="1492478982000" expanded="true" signature="158111:158136" ph="..." />
-            <marker date="1492478982000" expanded="true" signature="426472:426480" ph="&amp;##x2026;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1938,7 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1946,13 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1219#1235#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1682#1698#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1960,9 +1714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1970,17 +1721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="463">
           <caret line="71" column="53" lean-forward="true" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding>
-            <marker date="1505277179206" expanded="true" signature="296:430" ph="INSERT INTO systemlog" />
-            <marker date="1505277179206" expanded="true" signature="543:581" ph="UPDATE syste... " />
-            <marker date="1505277179206" expanded="true" signature="543:1001" ph="UPDATE syste... " />
-            <marker date="1505277179206" expanded="true" signature="1097:1140" ph="UPDATE syste... " />
-            <marker date="1505277179206" expanded="true" signature="1103:1140" ph="DELETE FROM " />
-            <marker date="1505277179206" expanded="true" signature="1220:1286" ph="SELECT COUNT... systemlog" />
-            <marker date="1505277179206" expanded="true" signature="1799:1837" ph="SELECT * fro... systemlog" />
-            <marker date="1505277179206" expanded="true" signature="1959:2048" ph="SELECT * fro... systemlog" />
-            <marker date="1505277179206" expanded="true" signature="1959:2487" ph="SELECT * fro... systemlog" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1988,12 +1728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="21" column="102" lean-forward="false" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
-          <folding>
-            <marker date="1484055566000" expanded="true" signature="5693:5713" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="5803:5811" ph="&amp;##xe603;" />
-            <marker date="1484055566000" expanded="true" signature="6139:6159" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="6248:6256" ph="&amp;##xe6de;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2001,12 +1735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <marker date="1484055566000" expanded="true" signature="7382:7402" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="7491:7499" ph="&amp;##xe6e1;" />
-            <marker date="1484055566000" expanded="true" signature="7826:7846" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="7934:7942" ph="&amp;##xe631;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2014,23 +1742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="10" column="145" lean-forward="true" selection-start-line="10" selection-start-column="145" selection-end-line="10" selection-end-column="145" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <marker date="1484055566000" expanded="true" signature="4349:4369" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="4458:4466" ph="&amp;##xe6e1;" />
-            <marker date="1484055566000" expanded="true" signature="4793:4813" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="4901:4909" ph="&amp;##xe631;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="40" column="85" lean-forward="true" selection-start-line="40" selection-start-column="85" selection-end-line="40" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2038,7 +1749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2046,24 +1756,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-441">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1484055566000" expanded="true" signature="4672:4692" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="4782:4790" ph="&amp;##xe603;" />
-            <marker date="1484055566000" expanded="true" signature="5118:5138" ph="..." />
-            <marker date="1484055566000" expanded="true" signature="5227:5235" ph="&amp;##xe6de;" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/main.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="65" column="95" lean-forward="true" selection-start-line="65" selection-start-column="95" selection-end-line="65" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/system/SystemLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="34" column="19" lean-forward="false" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/ValidateCodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tao/interceptor/SessionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/jsp/back/system/system-log.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="93" column="2" lean-forward="true" selection-start-line="93" selection-start-column="2" selection-end-line="93" selection-end-column="2" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#2;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="589">
+          <caret line="102" column="3" lean-forward="true" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

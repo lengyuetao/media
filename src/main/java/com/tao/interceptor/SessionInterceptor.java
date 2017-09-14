@@ -22,7 +22,7 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
 
     private static final String[] INTETERCEPT_URI= new String[] {
             "/back/login",
-            "/back/logout",
+            "/back/loginOut",
             "/back/index",
             "/back/error"
     };

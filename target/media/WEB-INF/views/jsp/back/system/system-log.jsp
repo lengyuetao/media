@@ -99,7 +99,6 @@ $('.table-sort').dataTable({
       json.startTm=$('#logmin').val();
       json.endTm=$('#logmax').val();
 
-      console.info(json);
       $('.table-sort').DataTable().draw();
   }
 

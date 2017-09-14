@@ -33,7 +33,7 @@
 <body>
 <header class="navbar-wrapper">
 	<div class="navbar navbar-fixed-top">
-		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml">会员管理系统</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml"></a> <span class="logo navbar-slogan f-l mr-10 hidden-xs"></span> <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
+		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml">会员管理系统</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml"></a> <span class="logo navbar-slogan f-l mr-10 hidden-xs"></span> <a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:">&#xe667;</a>
 			<%--<nav class="nav navbar-nav">--%>
 				<%--<ul class="cl">--%>
 					<%--<li class="dropDown dropDown_hover"><a href="javascript:;" class="dropDown_A"><i class="Hui-iconfont">&#xe600;</i> 新增 <i class="Hui-iconfont">&#xe6d5;</i></a>--%>
@@ -53,18 +53,18 @@
 						<ul class="dropDown-menu menu radius box-shadow">
 							<li><a href="#">个人信息</a></li>
 							<li><a href="#">切换账户</a></li>
-							<li><a href="#">退出</a></li>
+							<li><a href="${contextPath}/back/loginOut">退出</a></li>
 						</ul>
 					</li>
 					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
-					<li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
+					<li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
-							<li><a href="javascript:;" data-val="default" title="默认（黑色）">默认（黑色）</a></li>
-							<li><a href="javascript:;" data-val="blue" title="蓝色">蓝色</a></li>
-							<li><a href="javascript:;" data-val="green" title="绿色">绿色</a></li>
-							<li><a href="javascript:;" data-val="red" title="红色">红色</a></li>
-							<li><a href="javascript:;" data-val="yellow" title="黄色">黄色</a></li>
-							<li><a href="javascript:;" data-val="orange" title="绿色">橙色</a></li>
+							<li><a href="javascript:" data-val="default" title="默认（黑色）">默认（黑色）</a></li>
+							<li><a href="javascript:" data-val="blue" title="蓝色">蓝色</a></li>
+							<li><a href="javascript:" data-val="green" title="绿色">绿色</a></li>
+							<li><a href="javascript:" data-val="red" title="红色">红色</a></li>
+							<li><a href="javascript:" data-val="yellow" title="黄色">黄色</a></li>
+							<li><a href="javascript:" data-val="orange" title="绿色">橙色</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -104,7 +104,7 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="${contextPath}/back/member/member-list.jsp" data-title="会员列表" href="javascript:;">会员列表</a></li>
+					<li><a _href="${contextPath}/back/member/member-list.jsp" data-title="会员列表" href="javascript:">会员列表</a></li>
 					<%--<li><a _href="${contextPath}/back/member/member-del.jsp" data-title="删除的会员" href="javascript:;">删除的会员</a></li>--%>
 					<%-- <li><a _href="${contextPath}/back/member/member-level.jsp" data-title="等级管理" href="javascript:;">等级管理</a></li>
 					<li><a _href="${contextPath}/back/member/member-scoreoperation.jsp" data-title="积分管理" href="javascript:;">积分管理</a></li> --%>
@@ -147,7 +147,7 @@
 				<li class="active"><span title="我的桌面" data-href="${contextPath}/back/welcome">我的桌面</span><em></em></li>
 			</ul>
 		</div>
-		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
 	</div>
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
