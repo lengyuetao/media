@@ -75,14 +75,14 @@
 <aside class="Hui-aside">
 	<input runat="server" id="divScrollValue" type="hidden" value="" />
 	<div class="menu_dropdown bk_2">
-		<%--<dl id="menu-article">--%>
-			<%--<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>--%>
-			<%--<dd>--%>
-				<%--<ul>--%>
-					<%--<li><a _href="${contextPath}/back/article/article-list.jsp" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>--%>
-				<%--</ul>--%>
-			<%--</dd>--%>
-		<%--</dl>--%>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="${contextPath}/article/list" data-title="资讯管理" href="javascript:void(0)">资讯管理</a></li>
+				</ul>
+			</dd>
+		</dl>
 		<%--<dl id="menu-picture">--%>
 			<%--<dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>--%>
 			<%--<dd>--%>
@@ -147,7 +147,7 @@
 				<li class="active"><span title="我的桌面" data-href="${contextPath}/back/welcome">我的桌面</span><em></em></li>
 			</ul>
 		</div>
-		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
+		<div class="Hui-tabNav-more btn-group"><a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:"><i class="Hui-iconfont">&#xe6d4;</i></a><a id="js-tabNav-next" class="btn radius btn-default size-S" href="javascript:"><i class="Hui-iconfont">&#xe6d7;</i></a></div>
 	</div>
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">

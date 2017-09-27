@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../alibaba-dubbo/dubbo-admin" />
     <file type="web" url="file://$PROJECT_DIR$/../dbutils" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/../test" />
+    <file type="web" url="file://$PROJECT_DIR$/../zat_dubbo_consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/../zat_dubbo_provider" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -16,6 +19,13 @@
         <option value="$PROJECT_DIR$/../zat_kafka/pom.xml" />
         <option value="$PROJECT_DIR$/../zat_demo0/pom.xml" />
         <option value="$PROJECT_DIR$/../demo0/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-dubbo/dubbo-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/../dubbo_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../zat_dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/../dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/../zat_dubbo_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../zat_dubbo_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../alibaba-dubbo/pom.xml" />
       </list>
     </option>
   </component>

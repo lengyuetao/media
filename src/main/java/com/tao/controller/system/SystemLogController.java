@@ -33,9 +33,9 @@ public class SystemLogController {
      * 系统日志列表
      * @param startTm
      * @param endTm
-     * @param draw
-     * @param start
-     * @param length
+     * @param draw 当前页
+     * @param start 从某个位置开始查询
+     * @param length 每页显示多少条
      * @return
      */
     @RequestMapping(value = "/log/list",produces = "application/json; charset=utf-8")
