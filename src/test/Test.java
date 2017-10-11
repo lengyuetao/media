@@ -1,4 +1,15 @@
+import com.tao.entity.Article;
+
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 import java.util.StringTokenizer;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.FutureTask;
+
+
 
 /**
  * Created by zhangantao on 2017/4/21.
@@ -25,5 +36,43 @@ public class Test {
         String str="";
 
         System.out.println(Math.asin(10>>4/3));
+
+
+        List<String> list=new ArrayList<String>();
+
+        list.add("kks");
+        list.add("bbs");
+        list.add("ccs");
+        list.add("ees");
+
+        Person person=new Person();
+        person.setId(1);
+        person.setUserName("kksdfa");
+        person.setPwd("12312");
+        person.setAddTime(new Date());
+
+        System.out.println("对象："+person.toString()+"\n哈希值："+person.hashCode());
+
+        try {
+            Person p= (Person) person.clone();
+            System.out.println("克隆对象："+p.toString()+"\n哈希值："+p.hashCode());
+            System.out.println(person==p);
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println(Math.random());
+
+        Object obj=new Object();
+
+        Test t=new Test();
+
+
+    }
+
+    public Test(){
+        URL url=getClass().getClassLoader().getResource("redis.properties");
+        System.out.println("url地址："+url);
     }
 }

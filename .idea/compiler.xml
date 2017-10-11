@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api" />
         <module name="dbutils" />
         <module name="demo0" />
         <module name="dubbo" />
@@ -65,8 +66,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api" target="1.5" />
       <module name="dbutils" target="1.8" />
-      <module name="demo" target="1.8" />
       <module name="demo0" target="1.8" />
       <module name="dubbo" target="1.6" />
       <module name="dubbo-admin" target="1.6" />
@@ -125,12 +126,8 @@
       <module name="dubbo-test-compatibility" target="1.6" />
       <module name="dubbo-test-examples" target="1.6" />
       <module name="dubbo-test-integration" target="1.6" />
-      <module name="dubbo_provider" target="1.8" />
       <module name="hessian-lite" target="1.6" />
-      <module name="media" target="1.5" />
-      <module name="springboot_demo" target="1.8" />
-      <module name="test" target="1.8" />
-      <module name="zat_demo0" target="1.8" />
+      <module name="media" target="1.8" />
       <module name="zat_dubbo_consumer" target="1.8" />
       <module name="zat_dubbo_provider" target="1.8" />
       <module name="zat_kafka" target="1.8" />

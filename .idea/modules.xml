@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../api/api.iml" filepath="$PROJECT_DIR$/../api/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/../dbutils/dbutils.iml" filepath="$PROJECT_DIR$/../dbutils/dbutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/../demo0/demo0.iml" filepath="$PROJECT_DIR$/../demo0/demo0.iml" />
       <module fileurl="file://$PROJECT_DIR$/../alibaba-dubbo/dubbo/dubbo.iml" filepath="$PROJECT_DIR$/../alibaba-dubbo/dubbo/dubbo.iml" />

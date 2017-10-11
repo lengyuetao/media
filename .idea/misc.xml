@@ -2,6 +2,7 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../alibaba-dubbo/dubbo-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/../api" />
     <file type="web" url="file://$PROJECT_DIR$/../dbutils" />
     <file type="web" url="file://$PROJECT_DIR$" />
     <file type="web" url="file://$PROJECT_DIR$/../test" />
@@ -26,6 +27,7 @@
         <option value="$PROJECT_DIR$/../zat_dubbo_consumer/pom.xml" />
         <option value="$PROJECT_DIR$/../zat_dubbo_provider/pom.xml" />
         <option value="$PROJECT_DIR$/../alibaba-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/../api/pom.xml" />
       </list>
     </option>
   </component>
