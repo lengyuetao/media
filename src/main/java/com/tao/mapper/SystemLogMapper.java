@@ -1,4 +1,4 @@
-package com.tao.mapper.system;
+package com.tao.mapper;
 
 import com.tao.entity.system.SystemLog;
 import org.apache.ibatis.annotations.Param;

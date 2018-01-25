@@ -1,7 +1,7 @@
 package com.tao.service;
 
 import com.tao.entity.UserInfo;
-import com.tao.mapper.bs.UserInfoMapper;
+import com.tao.mapper.UserInfoMapper;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
