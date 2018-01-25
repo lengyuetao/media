@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 
 @RestController
@@ -24,7 +25,22 @@ public class RoleController {
 
 	@Resource
 	private RoleService roleService;
-	
+
+	/**
+	 * 角色页面
+	 * @return
+	 */
+	@RequestMapping(value="/index",method=RequestMethod.GET)
+	public ModelAndView index(){
+		return new ModelAndView("back/admin/admin-role");
+	}
+
+
+	@RequestMapping(value="/editor",method=RequestMethod.GET)
+	public ModelAndView toAddIndex(){
+		return new ModelAndView("back/admin/admin-role-add");
+	}
+
 	/**
 	 * 添加角色
 	 * @param name

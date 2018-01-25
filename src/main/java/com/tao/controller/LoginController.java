@@ -17,16 +17,16 @@ public class LoginController {
 
     private static final Logger logger=Logger.getLogger(LoginController.class);
 
-    @RequestMapping("/back/login")
+    @RequestMapping("/login")
     public String login(HttpServletRequest request,
                         @RequestParam(value ="userName",required = true)String userName,
                         @RequestParam(value="password",required = true)String password){
         if(userName.equals("admin")&&password.equals("123")){
             request.getSession().setAttribute("userName",userName);
-            return "redirect:/back/main";
+            return "redirect:/bs/main";
         }else {
             logger.error("用户名和密码错误！");
-            return "redirect:/back/index";
+            return "redirect:/bs/index";
         }
     }
 

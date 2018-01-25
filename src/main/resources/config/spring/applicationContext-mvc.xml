@@ -17,6 +17,20 @@
 
     <import resource="classpath*:redis/applicationContext-redis.xml"/>
 
+
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=UTF-8</value>
+                        <value>text/html;charset=UTF-8</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
     <!--访问静态资源-->
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
 
@@ -35,13 +49,13 @@
     </bean>
 
 
-    <mvc:interceptors>
-        <!--设置token拦截器 -->
-        <mvc:interceptor>
-            <mvc:mapping path="/back/**" />
-            <bean class="com.tao.interceptor.SessionInterceptor" />
-        </mvc:interceptor>
+    <!--<mvc:interceptors>-->
+        <!--&lt;!&ndash;设置token拦截器 &ndash;&gt;-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/**" />-->
+            <!--<bean class="com.tao.interceptor.SessionInterceptor" />-->
+        <!--</mvc:interceptor>-->
 
-    </mvc:interceptors>
+    <!--</mvc:interceptors>-->
 
 </beans>

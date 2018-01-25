@@ -31,7 +31,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal" action="${contextPath}/back/login" method="post" onsubmit="return toValidate()">
+    <form class="form form-horizontal" action="${contextPath}/login" method="post" onsubmit="return toValidate()">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
@@ -106,7 +106,7 @@
     }
     return true;
 
-  };
+  }
 
 </script>
 </body>
