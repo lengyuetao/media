@@ -11,6 +11,7 @@ import java.util.Map;
 /**
  * Created by DELL on 2017/9/7.
  */
+@Repository
 public interface SystemLogMapper {
 
     int insert(SystemLog systemLog);
