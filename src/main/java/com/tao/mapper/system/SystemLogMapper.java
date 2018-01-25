@@ -1,4 +1,4 @@
-package com.tao.mapper;
+package com.tao.mapper.system;
 
 import com.tao.entity.system.SystemLog;
 import org.apache.ibatis.annotations.Param;
@@ -19,9 +19,9 @@ public interface SystemLogMapper {
 
     int update(SystemLog systemLog);
 
-    int findSystemTotalCount(Map<String,Object> map);
+    int findSystemTotalCount(Map<String, Object> map);
 
     SystemLog getSystemLogById(Long id);
 
-    List<SystemLog> getSystemLogList(Map<String,Object> map);
+    List<SystemLog> getSystemLogList(Map<String, Object> map);
 }

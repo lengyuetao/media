@@ -1,9 +1,7 @@
 package com.tao.service;
 
 import com.tao.entity.system.SystemLog;
-import com.tao.mapper.SystemLogMapper;
-import com.tao.service.SystemLogService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.tao.mapper.system.SystemLogMapper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

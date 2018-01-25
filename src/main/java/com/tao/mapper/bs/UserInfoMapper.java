@@ -1,4 +1,4 @@
-package com.tao.mapper;
+package com.tao.mapper.bs;
 
 import com.tao.entity.UserInfo;
 import org.apache.ibatis.annotations.Param;

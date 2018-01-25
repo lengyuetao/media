@@ -1,10 +1,8 @@
 package com.tao.service;
 
 import com.tao.entity.UserInfo;
-import com.tao.mapper.UserInfoMapper;
-import com.tao.service.UserInfoService;
+import com.tao.mapper.bs.UserInfoMapper;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -16,7 +14,7 @@ import java.util.List;
 @Service
 public class UserInfoService{
      @Resource
-     UserInfoMapper userInfoMapper;
+     private UserInfoMapper userInfoMapper;
 
      public List<UserInfo> findAllUserInfo() {
           return userInfoMapper.findAllUserInfo();
