@@ -9,8 +9,7 @@ import java.util.List;
 /**
  * Created by zhangantao on 2017/4/19.
  */
-@Repository
-public interface UserInfoDao {
+public interface UserInfoMapper {
 
     List<UserInfo> findAllUserInfo();
 

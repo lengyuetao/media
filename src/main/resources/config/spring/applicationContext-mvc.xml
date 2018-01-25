@@ -11,22 +11,14 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-    <context:annotation-config/>
+    <context:component-scan base-package="com.tao.controller"/>
+
+    <mvc:annotation-driven/>
 
     <import resource="classpath*:redis/applicationContext-redis.xml"/>
 
-    <mvc:annotation-driven>
-        <mvc:message-converters>
-            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
-                <property name="supportedMediaTypes">
-                    <list>
-                        <value>application/json;charset=UTF-8</value>
-                        <value>text/html;charset=UTF-8</value>
-                    </list>
-                </property>
-            </bean>
-        </mvc:message-converters>
-    </mvc:annotation-driven>
+    <!--访问静态资源-->
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
 
     <!--请求映射-->
     <bean id="viewResolver"
@@ -34,12 +26,6 @@
         <property name="prefix" value="/WEB-INF/views/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
-    <!--访问静态资源-->
-    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"></mvc:resources>
-
-    <mvc:resources mapping="swagger-ui.html" location="classpath:/META-INF/resources/" />
-    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/" />
 
     <!--FileUpload config-->
     <bean id="mutipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
