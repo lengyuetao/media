@@ -1,14 +1,7 @@
-import com.tao.entity.Article;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.StringTokenizer;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.CyclicBarrier;
-import java.util.concurrent.FutureTask;
-
 
 
 /**

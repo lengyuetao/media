@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.mapper.bs.RoleMapper">
+	
+	<insert id="insert" parameterType="com.tao.entity.bs.RoleEntity">
+		 INSERT INTO role (
+        	name,
+        	description,
+        	create_tm
+        ) VALUES (
+        	#{name},
+        	#{description},
+        	now()
+        )
+	</insert>
+	
+    <update id="update" parameterType="com.tao.entity.bs.RoleEntity">
+    	update 
+    		role
+    	<set>
+    		<if test="name != null and name != ''">
+				name = #{name} ,
+			</if>
+			<if test="description != null and description != ''">
+				description = #{description} ,
+			</if>
+    	</set>
+    	where 
+    		id=#{id}
+    </update>
+    
+     <!-- 查询所有角色 -->
+    <select id="getRoleDetail" resultType="com.tao.entity.bs.RoleEntity">
+    	SELECT 
+    		id,
+			name,
+        	description,
+        	create_tm as createTm
+	    FROM 
+	    	role
+	    where 
+	    	name=#{name}	
+    </select>
+  
+    
+    <!-- 查询所有角色 -->
+    <select id="getAllRole" resultType="com.tao.entity.bs.RoleEntity">
+    	SELECT 
+    		id,
+			name,
+        	description,
+        	create_tm as createTm
+	    FROM 
+	    	role
+    </select>
+  
+    <!-- 分页查询 -->
+	<select id="getRoleList" parameterType="map"  resultType="com.tao.entity.bs.RoleEntity">
+		SELECT 
+			id,
+			name,
+        	description,
+        	create_tm as createTm
+	    FROM 
+	    	role
+	    <where> 
+		    <if test="name != null and name !=''">
+			 	and	name like concat(#{name},"%")
+			</if>
+			<if test="startTm != null and startTm != ''">
+	       	 	and create_tm  >= #{startTm}
+	       	</if>
+	        <if test="endTm != null and endTm !=''">
+	         	and create_tm  <![CDATA[<=]]> #{endTm}
+			</if>
+		</where>
+       	ORDER BY
+			create_tm DESC
+		limit #{pageIndex},#{pageSize}
+	</select>
+	
+	<!-- 查询统计 -->
+	<select id="getRoleCount" parameterType="map" resultType="int">
+		SELECT 
+			count(1) counts
+		 FROM 
+	    	role
+	   <where>
+		    <if test="name != null and name !=''">
+			 	and	name like concat(#{name},"%")
+			</if>
+			<if test="startTm != null and startTm != ''">
+	       	 	and create_tm  >= #{startTm}
+	       	</if>
+	        <if test="endTm != null and endTm !=''">
+	         	and create_tm  <![CDATA[<=]]> #{endTm}
+			</if>
+		</where>
+	</select>
+</mapper>

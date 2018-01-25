@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="zat_dubbo_provider" />
+          <element id="module-output" name="dubbo" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: junit:junit:4.10" />
@@ -58,6 +58,7 @@
           <element id="library" level="project" name="Maven: io.springfox:springfox-swagger-common:2.7.0" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-spring-web:2.7.0" />
           <element id="library" level="project" name="Maven: org.reflections:reflections:0.9.11" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.21.0-GA" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:18.0" />
           <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.3.3" />
           <element id="library" level="project" name="Maven: org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE" />
@@ -67,9 +68,119 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.6" />
           <element id="library" level="project" name="Maven: io.springfox:springfox-swagger-ui:2.7.0" />
-          <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.5" />
-          <element id="library" level="project" name="Maven: org.javassist:javassist:3.20.0-GA" />
+          <element id="archive" name="dubbo-2.5.5.jar">
+            <element id="module-output" name="dubbo (1) (com.alibaba)" />
+          </element>
+          <element id="archive" name="dubbo-config-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-config-api" />
+          </element>
+          <element id="archive" name="dubbo-registry-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-registry-api" />
+          </element>
+          <element id="archive" name="dubbo-cluster-2.5.5.jar">
+            <element id="module-output" name="dubbo-cluster" />
+          </element>
+          <element id="archive" name="dubbo-monitor-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-monitor-api" />
+          </element>
+          <element id="archive" name="dubbo-remoting-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-api" />
+          </element>
+          <element id="archive" name="dubbo-filter-validation-2.5.5.jar">
+            <element id="module-output" name="dubbo-filter-validation" />
+          </element>
+          <element id="archive" name="dubbo-filter-cache-2.5.5.jar">
+            <element id="module-output" name="dubbo-filter-cache" />
+          </element>
+          <element id="library" level="project" name="Maven: org.glassfish:javax.el:3.0.1-b08" />
+          <element id="archive" name="dubbo-config-spring-2.5.5.jar">
+            <element id="module-output" name="dubbo-config-spring" />
+          </element>
+          <element id="archive" name="dubbo-remoting-netty-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-netty" />
+          </element>
           <element id="library" level="project" name="Maven: org.jboss.netty:netty:3.2.5.Final" />
+          <element id="archive" name="dubbo-remoting-mina-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-mina" />
+          </element>
+          <element id="archive" name="dubbo-remoting-grizzly-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-grizzly" />
+          </element>
+          <element id="archive" name="dubbo-remoting-p2p-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-p2p" />
+          </element>
+          <element id="archive" name="dubbo-remoting-http-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-http" />
+          </element>
+          <element id="archive" name="dubbo-common-2.5.5.jar">
+            <element id="module-output" name="dubbo-common" />
+          </element>
+          <element id="archive" name="hessian-lite-3.2.1-fixed-2.jar">
+            <element id="module-output" name="hessian-lite" />
+          </element>
+          <element id="archive" name="dubbo-rpc-default-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-default" />
+          </element>
+          <element id="archive" name="dubbo-rpc-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-api" />
+          </element>
+          <element id="archive" name="dubbo-container-api-2.5.5.jar">
+            <element id="module-output" name="dubbo-container-api" />
+          </element>
+          <element id="archive" name="dubbo-rpc-injvm-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-injvm" />
+          </element>
+          <element id="archive" name="dubbo-rpc-rmi-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-rmi" />
+          </element>
+          <element id="archive" name="dubbo-rpc-hessian-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-hessian" />
+          </element>
+          <element id="archive" name="dubbo-rpc-http-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-http" />
+          </element>
+          <element id="archive" name="dubbo-rpc-webservice-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-webservice" />
+          </element>
+          <element id="archive" name="dubbo-rpc-thrift-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-thrift" />
+          </element>
+          <element id="archive" name="dubbo-rpc-memcached-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-memcached" />
+          </element>
+          <element id="archive" name="dubbo-rpc-redis-2.5.5.jar">
+            <element id="module-output" name="dubbo-rpc-redis" />
+          </element>
+          <element id="archive" name="dubbo-registry-default-2.5.5.jar">
+            <element id="module-output" name="dubbo-registry-default" />
+          </element>
+          <element id="archive" name="dubbo-registry-multicast-2.5.5.jar">
+            <element id="module-output" name="dubbo-registry-multicast" />
+          </element>
+          <element id="archive" name="dubbo-registry-zookeeper-2.5.5.jar">
+            <element id="module-output" name="dubbo-registry-zookeeper" />
+          </element>
+          <element id="archive" name="dubbo-remoting-zookeeper-2.5.5.jar">
+            <element id="module-output" name="dubbo-remoting-zookeeper" />
+          </element>
+          <element id="archive" name="dubbo-registry-redis-2.5.5.jar">
+            <element id="module-output" name="dubbo-registry-redis" />
+          </element>
+          <element id="archive" name="dubbo-monitor-default-2.5.5.jar">
+            <element id="module-output" name="dubbo-monitor-default" />
+          </element>
+          <element id="archive" name="dubbo-container-spring-2.5.5.jar">
+            <element id="module-output" name="dubbo-container-spring" />
+          </element>
+          <element id="archive" name="dubbo-container-jetty-2.5.5.jar">
+            <element id="module-output" name="dubbo-container-jetty" />
+          </element>
+          <element id="archive" name="dubbo-container-log4j-2.5.5.jar">
+            <element id="module-output" name="dubbo-container-log4j" />
+          </element>
+          <element id="archive" name="dubbo-container-logback-2.5.5.jar">
+            <element id="module-output" name="dubbo-container-logback" />
+          </element>
           <element id="library" level="project" name="Maven: com.github.sgroschupf:zkclient:0.1" />
           <element id="library" level="project" name="Maven: org.apache.zookeeper:zookeeper:3.3.3" />
           <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
@@ -78,7 +189,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/../zat_dubbo_provider/target/dubbo/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="zat_dubbo_provider/web/Web" />
+      <element id="javaee-facet-resources" facet="dubbo/web/Web" />
     </root>
   </artifact>
 </component>

@@ -60,6 +60,7 @@
     <file url="file://$PROJECT_DIR$/../alibaba-dubbo/dubbo-test/dubbo-test-integration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../alibaba-dubbo/hessian-lite" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../dbutils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dbutils/src/main/java/com/tao/utils/DateTool.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/../demo0" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../zat_kafka" charset="UTF-8" />

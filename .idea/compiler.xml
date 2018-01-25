@@ -10,6 +10,7 @@
         <module name="dbutils" />
         <module name="demo0" />
         <module name="dubbo" />
+        <module name="dubbo (1) (com.alibaba)" />
         <module name="dubbo-admin" />
         <module name="dubbo-cluster" />
         <module name="dubbo-common" />
@@ -69,7 +70,8 @@
       <module name="api" target="1.5" />
       <module name="dbutils" target="1.8" />
       <module name="demo0" target="1.8" />
-      <module name="dubbo" target="1.6" />
+      <module name="dubbo" target="1.8" />
+      <module name="dubbo (1) (com.alibaba)" target="1.6" />
       <module name="dubbo-admin" target="1.6" />
       <module name="dubbo-cluster" target="1.6" />
       <module name="dubbo-common" target="1.6" />

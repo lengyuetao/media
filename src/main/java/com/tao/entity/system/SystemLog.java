@@ -1,11 +1,12 @@
 package com.tao.entity.system;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by DELL on 2017/9/7.
  */
-public class SystemLog {
+public class SystemLog implements Serializable{
     /**
      * id
      */

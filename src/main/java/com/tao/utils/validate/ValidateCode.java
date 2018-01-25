@@ -132,7 +132,7 @@ public class ValidateCode {
     public static void main(String[] args) {
         ValidateCode vCode = new ValidateCode(100,40,5,150);
         try {
-            String path="/Users/zhangantao/Desktop/"+new Date().getTime()+".png";
+            String path="C:\\Users\\DELL\\Desktop\\"+new Date().getTime()+".png";
             System.out.println(vCode.getCode()+" >"+path);
             vCode.write(path);
         } catch (IOException e) {

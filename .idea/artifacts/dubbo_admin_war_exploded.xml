@@ -8,7 +8,7 @@
         </element>
         <element id="directory" name="lib">
           <element id="archive" name="dubbo-2.5.5.jar">
-            <element id="module-output" name="dubbo" />
+            <element id="module-output" name="dubbo (1) (com.alibaba)" />
           </element>
           <element id="archive" name="dubbo-config-api-2.5.5.jar">
             <element id="module-output" name="dubbo-config-api" />

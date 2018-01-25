@@ -30,9 +30,6 @@ public class SessionInterceptor extends HandlerInterceptorAdapter{
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
-
-//        response.setContentType("text/html;charset=UTF-8");
-
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-origin", "*");
         response.setHeader("Access-Control-Allow-Credentials", "true");

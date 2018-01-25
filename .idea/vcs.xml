@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../zat_dubbo_consumer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../zat_dubbo_provider" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../zat_kafka" vcs="Git" />
   </component>

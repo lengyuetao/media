@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.mapper.bs.MenuMapper">
+    <insert id="createMenu" parameterType="com.tao.entity.bs.MenuEntity">
+        INSERT into menu(`title`,`url`,`level`,`top_level`)
+        values(#{title},#{url},#{level},#{topLevel})
+    </insert>
+
+	<!-- 根据角色id查找菜单 -->
+    <select id="findMenuListByRoleId" resultType="com.tao.entity.bs.MenuEntity">
+      select
+        m.id,
+        m.title,
+        m.url,
+        m.level,
+        m.top_level as topLevel
+      from
+        role_menu rm
+          inner join menu m
+          on rm.menu_id = m.id
+      WHERE
+        rm.role_id = #{roleId}
+      order by m.id
+    </select>
+	
+	<!-- 查询所有一级菜单 -->
+    <select id="findAllTopMenuList" resultType="com.tao.entity.bs.MenuEntity">
+        SELECT
+            id,
+            title,
+            url,
+            `level`,
+            top_level as topLevel
+        from
+          menu
+        where
+          `level` = 1
+    </select>
+	
+	<!-- 所有二级菜单 -->
+	<select id="getAllSubsMenu" resultType="com.tao.entity.bs.MenuEntity">
+		SELECT
+            id,
+            title,
+            url,
+            `level`,
+            top_level as topLevel
+        from
+          	menu
+	</select>
+	
+    <delete id="delAllByRoleId">
+        delete from role_menu where role_id = #{roleId}
+    </delete>
+
+    <insert id="addRoleMenu">
+        INSERT  into role_menu(`role_id`,`menu_id`) values(#{roleId},#{menuId})
+    </insert>
+    
+    <!-- 修改菜单 -->
+    <update id="updateMenu" parameterType="com.tao.entity.bs.MenuEntity">
+    	update
+    		menu
+   		<set>
+   			<if test="title != null and title != ''">
+				title = #{title} ,
+			</if>
+   			<if test="url != null">
+				url = #{url} ,
+			</if>
+   			<if test="level != null">
+				level = #{level} ,
+			</if>
+   			<if test="topLevel != null">
+				top_level = #{topLevel} ,
+			</if>
+   		</set>
+    	where
+    		 `id`=#{id}
+    </update>
+    
+    <select id="getMenuCount" resultType="int">
+		SELECT count(1) as counts FROM 
+	    	menu
+	    <where>
+	    	<if test="title != null and title !=''">
+		 	 and title like concat(#{title},"%")
+			</if>
+	    </where>
+	</select>
+	
+	<!-- 分页查询 -->
+	<select id="getMenuPageList"   resultType="com.tao.entity.bs.MenuEntity">
+		SELECT 
+			   m.id,
+            m.title,
+              m.url,
+            m.`level`,
+            m.top_level as topLevel,
+            ifnull(e.title,'-')  as topTitle 
+	    FROM 
+	    	menu as m
+		left join 
+            (select id,title from menu) as e
+		on m.top_level=e.id
+	    <where>
+	    	<if test="title != null and title !=''">
+		 	 and m.title like concat(#{title},"%")
+			</if>
+	    </where>
+	    	
+       	ORDER BY
+			m.id DESC
+		limit #{pageIndex},#{pageSize}
+	</select>
+</mapper>

@@ -13,10 +13,12 @@
        http://www.springframework.org/schema/tx/spring-tx.xsd
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <context:component-scan base-package="com.tao.service" />
+
     <!--引入jdbc配置文件-->
     <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
 
-    <bean id="datasource" class="com.alibaba.druid.pool.DruidDataSource">
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url" value="${jdbc.url}"/>
         <property name="username" value="${jdbc.username}"/>
@@ -56,45 +58,22 @@
         <aop:advisor advice-ref="druid-stat-interceptor" pointcut-ref="druid-stat-pointcut"/>
     </aop:config>
 
-    <!--会话工厂sqlSessionFactory配置-->
+    <!-- define the SqlSessionFactory -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-        <!--数据源-->
-        <property name="dataSource" ref="datasource"/>
-        <!--别名-->
-        <property name="typeAliasesPackage" value="com.tao.entity"/>
-        <!--映射文件路径-->
-        <property name="mapperLocations" value="classpath:mapper/*Mapper.xml"/>
+        <property name="dataSource" ref="dataSource" />
+        <property name="typeAliasesPackage" value="com.tao.entity" />
     </bean>
-
-    <!--自动扫描对象关系映射-->
+    <!-- scan for mappers and let them be autowired -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <!--指定会话工厂，如果当前上下文中只定义了一个则该属性可省去 -->
+        <property name="basePackage" value="com.tao.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-        <!--指定自动扫描接口的基础包，实现接口-->
-        <property name="basePackage" value="com.tao.mapper"></property>
     </bean>
 
-    <context:component-scan base-package="com.tao"></context:component-scan>
-
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="datasource"/>
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
     </bean>
 
-    <!--通知-->
-    <tx:advice id="txAdvice" transaction-manager="transactionManager">
-        <tx:attributes>
-            <!--传播行为-->
-            <tx:method name="save*" propagation="REQUIRED"/>
-            <tx:method name="insert*" propagation="REQUIRED"/>
-            <tx:method name="update*" propagation="REQUIRED"/>
-            <tx:method name="delete*" propagation="REQUIRED"/>
-            <tx:method name="find*" propagation="SUPPORTS" read-only="true"/>
-            <tx:method name="get*" propagation="SUPPORTS" read-only="true"/>
-        </tx:attributes>
-    </tx:advice>
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
 
-    <!--配置aop-->
-    <aop:config>
-        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.tao.*.*.*.*(..))"/>
-    </aop:config>
 </beans>
