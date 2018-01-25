@@ -15,14 +15,6 @@
          http://www.springframework.org/schema/cache
        http://www.springframework.org/schema/cache/spring-cache-4.3.xsd">
 
-    <mvc:default-servlet-handler />
-
-    <mvc:annotation-driven/>
-
-    <context:annotation-config/>
-
-
-
     <!--启用缓存注解功能，必须的，否则注解失效-->
     <cache:annotation-driven cache-manager="cacheManager"/>
 
@@ -67,35 +59,5 @@
     <bean id="cacheManager" class="org.springframework.data.redis.cache.RedisCacheManager">
         <constructor-arg ref="redisTemplate" />
     </bean>
-
-
-  <bean id="redisMessageListener" class="com.tao.utils.jms.RedisMessageListener">
-      <property name="redisTemplate" ref="redisTemplate"/>
-  </bean>
-
-   <bean id="rediscontainer" class="org.springframework.data.redis.listener.RedisMessageListenerContainer">
-       <property name="connectionFactory"  ref="connectionFactory"/>
-       <property name="messageListeners">
-           <map>
-               <entry key-ref="redisMessageListener">
-                   <list>
-                       <!-- 普通订阅，订阅具体的频道 -->
-
-                       <bean class="org.springframework.data.redis.listener.ChannelTopic">
-                           <constructor-arg value="topic.channel"/>
-                       </bean>
-                       <!-- 模式订阅，支持模式匹配订阅，*为模糊匹配符 -->
-                       <bean class="org.springframework.data.redis.listener.PatternTopic">
-                           <constructor-arg value="topic.*"/>
-                       </bean>
-                        <!--匹配所有通道-->
-                       <bean class="org.springframework.data.redis.listener.PatternTopic">
-                           <constructor-arg value="*"/>
-                       </bean>
-                   </list>
-               </entry>
-           </map>
-       </property>
-   </bean>
 
 </beans>
